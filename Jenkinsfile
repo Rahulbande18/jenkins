@@ -7,7 +7,7 @@ pipeline{
 	stages {
 		stage ('master') {
 			steps {
-				sh "yum install tree -y"
+				echo "this is master"
 			}
 		}
 		stage ('node-1') {
@@ -17,7 +17,7 @@ pipeline{
 				}
 			}
 			steps {
-				sh "sudo yum install tree -y"
+				 echo "hello"
 			}
 		}
 
